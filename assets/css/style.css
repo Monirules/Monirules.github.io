@@ -13,6 +13,21 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  background-color: #03a690;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+button:hover {
+	background-color: #18ebcf;
+  color: #08362f;
+  transition: background-color 0.1s ease-in-out;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
