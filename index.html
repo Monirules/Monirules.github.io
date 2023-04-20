@@ -165,7 +165,8 @@
                   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
-
+              <br>
+              <button id="download-resume">Download Resume</button>
             </div>
           </div>
         </div>
@@ -529,7 +530,11 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
-
+  <script>
+    document.getElementById("download-resume").addEventListener("click", function() {
+      window.open("cv.pdf");
+    });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://use.fontawesome.com/your-embed-code.js"></script>
