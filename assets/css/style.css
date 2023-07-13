@@ -433,11 +433,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #1bbca3;
+  border: 2px solid #e0e00e;
 }
 
 #hero .btn-get-started:hover {
-  background: #1bbca3;
+  background: #903514;;
   color: #fff;
   text-decoration: none;
 }
