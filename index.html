@@ -71,18 +71,17 @@
     }
 
     .news-date {
-    background: linear-gradient(45deg, #8bc34a, #aed581); /* Gradient for splash effect */
-    color: white; 
-    font-size: 0.9em; 
-    font-weight: bold; 
-    padding: 3px 10px; 
-    border-radius: 5px; 
-    text-transform: uppercase; 
-    margin-right: 10px; 
-    flex-shrink: 0; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight depth */
-}
-
+      background: linear-gradient(45deg, #8bc34a, #aed581); 
+      color: white; 
+      font-size: 0.9em; 
+      font-weight: bold; 
+      padding: 3px 10px; 
+      border-radius: 5px; 
+      text-transform: uppercase; 
+      margin-right: 10px; 
+      flex-shrink: 0; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
 
     .news-text {
       flex-grow: 1; 
@@ -276,62 +275,60 @@
 
 
 
-  <div class="about-container">
-    <!-- Left Section: About Me -->
-    <div class="about-left">
-      <div class="section-title">
-        <h2>About me</h2>
+  <div class="container about-container">
+    <div class="row">
+      <!-- Left Section: About Me -->
+      <div class="col-md-6">
+        <div class="section-title">
+          <h2>About me</h2>
+          <hr>
+          <p style="text-align: justify;">
+            A Computer Science Engineer with a deep passion for Data Analytics, Human-Computer Interaction (HCI), Machine Learning, and Data Science. I am specialized in Python, TensorFlow, D3.js, Power BI, Tableau, Excel, Spark, and I'm committed to continuously advancing my expertise in these areas. My goal is to contribute to the development of innovative solutions that harness the power of Data and AI for societal benefit.
+  
+            As an aspiring Machine Learning researcher, I am dedicated to exploring emerging technologies and staying at the forefront of AI advancements. I actively engage with AI communities and research events to further my knowledge and network with like-minded professionals. In addition to my academic and professional pursuits, I enjoy reading, traveling, hiking, and immersing myself in diverse cultures.
+  
+            Let's connect and explore the dynamic world of data-driven innovation together!
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right Section: Notable News -->
+      <div class="col-md-6">
+        <h2>What's New?</h2>
         <hr>
-        <p style="text-align: justify;">
-          I am a Computer Science Engineer with a deep passion for Data Analytics, Human-Computer Interaction (HCI), Machine Learning, and Data Science. I specialize in Python, TensorFlow, D3.js, Power BI, Tableau, Excel, and Spark, and I am committed to continuously advancing my expertise in these areas. My goal is to contribute to the development of innovative solutions that harness the power of data and AI for societal benefit.
-  
-          As an aspiring Machine Learning researcher, I am dedicated to exploring emerging technologies and staying at the forefront of AI advancements. I actively engage with AI communities and research events to further my knowledge and network with like-minded professionals. In addition to my academic and professional pursuits, I enjoy reading, traveling, hiking, and immersing myself in diverse cultures.
-  
-          Let's connect and explore the dynamic world of data-driven innovation together!
-        </p>
+        <div class="news-container">
+          <div class="news-item">
+            <span class="news-date">NOV 2024</span>
+            <p class="news-text">Our paper <span>"Linear Discriminant Analysis in Credit Scoring: A Transparent Hybrid Model Approach"</span> has been accepted to IEEE International Conference on Computer and Information Technology (ICCIT) 2024.</p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Oct 2024</span>
+            <p class="news-text">Our paper, titled <span>"Optimizing Stroke Detection: An Analysis of Various Feature Selection Methods"</span> has been published online (doi: 10.1145/3675094.3677602) at the <span>UbiComp 2024 Conference, Australia.</span></p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">MAY 2024</span>
+            <p class="news-text">I am honored to serve as the Reviewer in peer-reviewed <span>IEEE Pervasive Computing.</span></p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Mar 2024</span>
+            <p class="news-text">I have started my Masters in Computer & Information Science at <span>Fordham University, NYC</span> with GSAS Centennial Scholarship.</p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">DEC 2023</span>
+            <p class="news-text">I am officially graduated from <span>North South University</span> with a Bachelors in Computer Science & Engineering.</p>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Jul 2023</span>
+            <p class="news-text">I have started working as Research Assistant at Design Inclusion & Access Lab (DIAL). Working on the project - <span>'Feasibility of Alternative Credit Scoring for the Credit Invincibles of Bangladesh'</span>
+              funded by <span>NSU-CTRG (CTRG-23-SEPS-02)</span></p>
+          </div>
+        </div>
       </div>
     </div>
-  
-    <!-- Right Section: Notable News -->
-    <div class="about-right">
-      <h2>What's New?</h2> <hr><!-- Static Header -->
-      <div class="news-container">
-        
-        <div class="news-item">
-          <span class="news-date">NOV 2024</span>
-          <p class="news-text">Our paper <span>"Linear Discriminant Analysis in Credit Scoring: A Transparent Hybrid Model Approach"</span> has been accepted to IEEE International Conference on Computer and Information Technology (ICCIT) 2024.</p>
-        </div>
-        <div class="news-item">
-          <span class="news-date">Oct 2024</span>
-          <p class="news-text">Our paper, titled <span>"Optimizing Stroke Detection: An Analysis of Various Feature Selection Methods"</span> has been published online (doi: 10.1145/3675094.3677602) at the <span>UbiComp 2024 Conference, Australia.</span></p>
-        </div>
-        <div class="news-item">
-          <span class="news-date">MAY 2024</span>
-          <p class="news-text">I am honored to serve as the Reviewer in peer-reviewed <span>IEEE Pervasive Computing.</span></p>
-        </div>
-
-        <div class="news-item">
-          <span class="news-date">Mar 2024</span>
-          <p class="news-text">I have started my Masters in Computer & Information Science at <span>Fordham University, NYC</span> with GSAS Centennial Scholarship.</p>
-        </div>
-
-        <div class="news-item">
-          <span class="news-date">DEC 2023</span>
-          <p class="news-text">I am officially graduated from <span>North South University</span> with a Bachelors in Computer Science & Engineering.</p><br>
-        </div>
-
-        <div class="news-item">
-          <span class="news-date">Jul 2023</span>
-          <p class="news-text">I have started working as Research Assistant at Design Inclusion & Access Lab (DIAL). Working on the project - <span>'Feasibility of Alternative Credit Scoring for the Credit Invincibles of Bangladesh'</span>
-            funded by <span>NSU-CTRG (CTRG-23-SEPS-02)</span></p><br>
-        </div>
-
-      </div>
-    </div>
+    <hr>
+    <br><br>
   </div>
   
-
-  <br><br><br>
   
 
 
@@ -751,10 +748,6 @@
 <br><br>
 
 
-
-
-
-    
 
     
       </div>
