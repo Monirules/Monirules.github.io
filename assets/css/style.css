@@ -1,4 +1,234 @@
 
+/* DARK MODE */
+
+body.dark-mode {
+  background-color: #121212; 
+  color: #ffffff; 
+}
+
+body.dark-mode a {
+  color: #ffffff; 
+}
+
+body.dark-mode a:hover {
+  color: #f1f4f3; 
+}
+
+body.dark-mode button {
+  background-color: #363535; 
+  color: #ffffff; /* Default text color */
+  border: 2px solid transparent; /* Initially no border visible */
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease, background-color 0.3s ease;
+}
+
+
+body.dark-mode button:hover {
+  color: #46ffff; 
+  background-color: #1f1e1e;
+}
+
+body.dark-mode button:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid #46ffff; 
+  border-radius: 5px; 
+  animation: border-scroll 1.3s linear infinite; 
+  pointer-events: none; 
+}
+
+@keyframes border-scroll {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0); /* Starts fully hidden */
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 0); /* Top side of border grows */
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); /* Right side grows */
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Bottom side grows */
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Full border visible */
+  }
+}
+
+body.dark-mode button:active {
+  transform: scale(1); /* Removes scaling when clicked */
+  box-shadow: 0 2px 10px rgba(236, 185, 43, 0.3); /* Reduced shadow on click */
+}
+
+
+body.dark-mode #header {
+    background-color: #202020;
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 10px 0;
+    box-shadow: 0px 3px 17px rgba(71, 230, 254, 0.431);
+  
+}
+body.dark-mode .text-light span{
+  color: #fff;
+}
+
+body.dark-mode .section-title h2 {
+  color: #46ffff; 
+}
+
+body.dark-mode .section-title p {
+  color: #dedede; 
+}
+
+body.dark-mode .nav-menu a:hover, 
+body.dark-mode .nav-menu .active > a, 
+body.dark-mode .nav-menu li:hover > a {
+  color: #46ffff; 
+  text-decoration: none; 
+}
+
+body.dark-mode .resume .resume-item h5 {
+  font-size: 14px;
+  background: #636363;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .resume-item em{
+  color: #ffffff;
+}
+
+body.dark-mode .resume-item p{
+  color: rgb(209, 209, 209);
+}
+
+body.dark-mode .resume-item .georgia{
+  font-family:"Open Sans", sans-serif;
+  
+  font-weight: 400;
+  color: transparent; 
+  -webkit-text-stroke: 1px #ffaa00; 
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+#darkModeToggle {
+  pointer-events: auto !important;
+  z-index: 9999 !important;
+  position: relative;
+}
+
+
+
+@keyframes neonGlow {
+  0% {
+    -webkit-text-stroke: 1px #ff9900; 
+    color: #ff9900; 
+  }
+  50% {
+    -webkit-text-stroke: 1px #0cd7de; 
+    color: #00f7ff; 
+  }
+  100% {
+    -webkit-text-stroke: 1px #0cd7de; 
+    color: #0cd7de; 
+  }
+}
+
+
+body.dark-mode .about .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #f7fffe;
+}
+
+body.dark-mode .data h3{
+  color: white;
+}
+
+body.dark-mode .team {
+  background: #121212;
+  padding: 60px 0;
+}
+
+body.dark-mode .contact{
+  background-color: #121212;
+}
+
+
+
+body.dark-mode .team .member .social button {
+  transition: color 0.3s;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  background-color: #fefefe20;
+}
+
+body.dark-mode .team .member .social button:hover {
+  transition: color 0.3s;
+  color: #ffffff;
+  margin: 0 10px;
+  display: inline-block;
+  outline: none;   /* Remove any outline */
+  border: none;    /* Remove any border */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+body.dark-mode .gallery-nav {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(213, 213, 213, 0.91);
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+body.dark-mode .gallery-nav:hover {
+  background-color: #4c5258db;
+  color: #46ffff;
+}
+
+body.dark-mode .gallery-nav.prev {
+  left: 10px;
+  transform: translateX(0); /* Remove any vertical movement */
+}
+
+body.dark-mode .gallery-nav.next {
+  right: 10px;
+  transform: translateX(0); /* Remove any vertical movement */
+}
+
+
+
+
+
+
+
+
+
+/* LIGHT MODEL STARTS HERE */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #334240;
@@ -209,6 +439,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.nav-menu .dark {
+  position: relative;
+  margin-left: 15px;
+  padding: 6px 8px;
+  font-size: 10px;
+}
+
+
+/* Mobile view (for screen widths 768px and below) */
+@media (max-width: 768px) {
+  #header .logo h1 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  #header .logo button {
+    font-size: 0.9rem; /* Smaller font size for the button */
+  }
+
+  #header .logo {
+    flex-direction: row; /* Ensure logo and button are beside each other */
+    align-items: center; /* Align items in the center */
+    justify-content: space-between; /* Space out logo and button */
+  }
+
+  #header .logo button.ms-3 {
+    margin-left: 1rem; /* Add space between the logo and button */
+  }
+}
+
+
+
 /* Mobile Navigation */
 .mobile-nav {
   position: fixed;
@@ -216,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow-y: auto;
-  left: -260px;
+  left: -360px;
   width: 260px;
   padding-top: 18px;
   background: rgba(43, 56, 54, 0.7);
@@ -1470,14 +1732,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #344341;
+  background: #242e2d;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #3d4f4c;
+  background: #2a3734;
   border-bottom: 1px solid #4d635f;
   padding: 60px 0 30px 0;
 }
@@ -1613,3 +1875,28 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.resume-item .georgia{
+  font-family: "sans-serif";
+  font-weight: normal;
+  color: transparent; /* Make the text itself transparent */
+  -webkit-text-stroke: 1px #ffaa00; /* Neon stroke color (pink) */
+  animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes neonGlow {
+  0% {
+    -webkit-text-stroke: 1px #ff9900; /* Pink stroke */
+    color: #ff9900; /* Pink text color */
+  }
+  50% {
+    -webkit-text-stroke: 1px #0cd7de; /* Blue stroke */
+    color: #00f7ff; /* Blue text color */
+  }
+  100% {
+    -webkit-text-stroke: 1px #c6f11b; /* Pink stroke */
+    color: #c6f11b; /* Pink text color */
+  }
+}
+

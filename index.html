@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Monirul Islam Portfolio</title>
+  <title>Monirul Islam</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,6 +15,10 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<!-- Add Font Awesome CDN -->
+<!-- Font Awesome 6 CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,6 +91,7 @@
       flex-grow: 1; 
       text-align: justify;
       color: #5f7c78;
+      padding-right: 14px;
     }
 
     .about-right h2{
@@ -170,94 +175,140 @@
       right: 10px;
     }
 
+    .dark {
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      font-size: 13px; /* Adjust font size as needed */
+      padding: 8px 14px; /* Padding for button */
+      margin-top: 3px;
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0px 4px 6px rgba(153, 153, 153, 0.4); 
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: all 0.4s ease; /* Smooth transition */
+    }
+
+    .dark:hover {
+      box-shadow: 0px 6px 10px rgba(128, 128, 128, 0.6); /* Deeper grey shadow on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+      background-color: #ffffff; /* Slightly off-white background */
+    }
     </style>
     
 </head>
 
-<body>
+<body id="body" class="dark-mode">
 
 
   <!-- ======= Navbar Section ======= -->
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
+  
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
+  
         <div class="carousel-inner" role="listbox">
-
+  
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="carousel-background"><img src="assets/img/n4.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"> <span style="color:rgb(245, 242, 239);">Greetings from</span> <span style="color: #ffae61;">Monirul</span></h2>
-                <p class="animate__animated animate__fadeInUp">"Transforming Ideas into Reality" <br> Researcher | Data Scientist <br> </p>
+                <h2 class="animate__animated animate__fadeInDown"> 
+                  <span style="color:rgb(245, 242, 239);">Greetings from</span> 
+                  <span style="color: #ffae61;">Monirul</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">"Transforming Ideas into Reality" <br> Researcher | Data Scientist <br></p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
               </div>
             </div>
           </div>
 
-          
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <!-- <div class="carousel-background"><img src="assets/img/logo2.jpg" alt=""></div> -->
-            <div class="carousel-background"><img src="assets/img/fordham-university-rose-hill-campus.png" alt=""></div>
+           <!-- Slide 2 -->
+           <div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/georgia.jpg" alt="Georgia Tech Campus"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"> <span style="color: rgb(238, 255, 82);">Fordham University</span></h2>
-                <p class="animate__animated animate__fadeInUp"> M.S. in Computer & Information Science <br>
-                  Interested in Engineering Education, Human-Computer Interaction and Trustworthy AI.
-              </p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lets Go Rams!</a>
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span style="color: rgb(238, 255, 82);">Georgia Institute of Technology</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  
+                  M.S. in Data Analytics <br>
+                  Major in Business Analytics Track.
+                </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Yellow Jackets!</a>
               </div>
             </div>
           </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/fordham-university-rose-hill-campus.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span style="color: rgb(238, 255, 82);">Fordham University</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  M.S. in Computer Science <br>
+                  Major in Artificial Intelligence Track.
+                </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Let's Go Rams!</a>
+              </div>
+            </div>
+          </div>
+  
+         
+  
         </div>
-
+  
+        <!-- Navigation -->
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon icofont-thin-double-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-
+  
         <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon icofont-thin-double-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-
+  
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
 
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container d-flex">
-      <div class="logo-img">
-        <a href="index.html"><img src="assets/img/ng4.jpg" alt="" class="img-fluid"></a>
-      </div>
-      <div class="logo mr-auto">
-        
-        <h1 class="text-light"><a href="index.html"><span>Monirul Islam</span></a></h1>
-       
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#services">Project</a></li>
-          
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- nav-menu -->
-
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="container d-flex">
+    <div class="logo-img">
+      <a href="index.html"><img src="assets/img/ng4.jpg" alt="" class="img-fluid"></a>
     </div>
-  </header>
+    <div class="logo d-flex align-items-center justify-content-between">
+      <h1 class="text-light">
+        <a href="index.html"><span>Monirul Islam</span></a>
+      </h1>
+      <button id="darkModeToggle" class="dark ms-3" style="font-size: 13px; padding:8px;">Light Mode</button>
+    </div>
+
+    <!-- Aligning the navigation menu to the right -->
+    <nav class="nav-menu d-none d-lg-block ml-auto">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#services">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- nav-menu -->
+  </div>
+</header>
+
   <!-- End Header -->
 
 
@@ -278,49 +329,53 @@
   <div class="container about-container">
     <div class="row">
       <!-- Left Section: About Me -->
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <div class="section-title">
-          <h2>About me</h2>
+          <h2>My Chapter So Far</h2>
           <hr>
           <p style="text-align: justify;">
-            A Computer Scientist with a deep passion for Data Analytics, Human-Computer Interaction (HCI) and Machine Learning. I am specialized in Python, TensorFlow, D3.js, Power BI, Tableau, Excel, Spark, and committed to continuously advancing my expertise in these areas. My goal is to contribute to the development of innovative solutions that harness the power of Data and AI for societal benefit.
+            A curious man with a deep passion for Business Analytics, Human-Computer Interaction (HCI) and Data Mining. Proficient in Python, TensorFlow, D3.js, Tableau, Advanced Excel, PySpark, and committed to continuously advancing my expertise in these areas. My goal is to contribute to the development of Innovative AI solutions for Societal Benefit.
   
-            As a Graduate student at Georgia Tech & Fordham University, I am dedicated to exploring emerging technologies and staying at the forefront of AI advancements. I actively engage with AI communities and research events to further my knowledge and network with like-minded professionals. In addition to my academic and professional pursuits, I enjoy reading, traveling, hiking, and immersing myself in diverse cultures.
+            As a Graduate student at Georgia Tech & Fordham University, I am dedicated to explore emerging technologies and staying at the forefront of AI advancements. Beside my academic and professional pursuits, I enjoy Football, Traveling, Hiking, and immersing myself in diverse cultures. 
   
-            Let's connect and explore the dynamic world of data-driven innovation together!
+            Let's connect and explore the Dynamic World of Data together!
           </p>
         </div>
       </div>
   
       <!-- Right Section: Notable News -->
-      <div class="col-md-6 section-title">
+      <div class="col-md-6 col-sm-6 section-title">
         <h2>Latest Updates</h2>
         <hr>
         <div class="news-container">
           <div class="news-item">
+            <span class="news-date">DEC 2024</span>
+            <p class="news-text">A proud milestone in my journey—I've been accepted into the M.S. in Analytics program at <span> Georgia Institute of Technology</span>! Very excited to join one of the world's Top 5 CS Ranked universities. </p>
+          </div><hr>
+          <div class="news-item">
             <span class="news-date">NOV 2024</span>
             <p class="news-text">Our paper <span>"Linear Discriminant Analysis in Credit Scoring: A Transparent Hybrid Model Approach"</span> has been accepted to IEEE International Conference on Computer and Information Technology (ICCIT) 2024.</p>
-          </div>
+          </div><hr>
           <div class="news-item">
             <span class="news-date">Oct 2024</span>
             <p class="news-text">Our paper, titled <span>"Optimizing Stroke Detection: An Analysis of Various Feature Selection Methods"</span> has been published online (doi: 10.1145/3675094.3677602) at the <span>UbiComp 2024 Conference, Australia.</span></p>
-          </div>
+          </div><hr>
           <div class="news-item">
             <span class="news-date">MAY 2024</span>
             <p class="news-text">I am honored to serve as the Reviewer in peer-reviewed <span>IEEE Pervasive Computing.</span></p>
-          </div>
+          </div><hr>
           <div class="news-item">
             <span class="news-date">Mar 2024</span>
-            <p class="news-text">I have started my Masters in Computer & Information Science at <span>Fordham University, NYC</span> with GSAS Centennial Scholarship.</p>
-          </div>
+            <p class="news-text">I have started my Masters in Computer & Information Science at <span>Fordham University, New York</span> with GSAS Centennial Scholarship.</p>
+          </div><hr>
           <div class="news-item">
             <span class="news-date">DEC 2023</span>
             <p class="news-text">I am officially graduated from <span>North South University</span> with a Bachelors in Computer Science & Engineering.</p>
-          </div>
+          </div><hr>
           <div class="news-item">
             <span class="news-date">Jul 2023</span>
             <p class="news-text">I have started working as Research Assistant at Design Inclusion & Access Lab (DIAL). Working on the project - <span>'Feasibility of Alternative Credit Scoring for the Credit Invincibles of Bangladesh'</span>
-              funded by <span>NSU-CTRG (CTRG-23-SEPS-02)</span></p>
+              funded by <span>NSU-CTRG</span> (CTRG-23-SEPS-02) </p>
           </div>
         </div>
       </div>
@@ -329,48 +384,54 @@
     <br><br>
   </div>
   
-  
-
+<br>
 
         <div class="row">
           <div class="col-lg-6">
-            <img src="assets/img/Mahmud pic 4.jpg" class="img-fluid" width="60%" alt="">
+            <img src="assets/img/13.png" class="img-fluid" style="box-shadow: 0 0 15px 1px cyan;" width="85%" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Proficient in <span style="color:orange; ">Data Analytics</span> with <strong><br> Power BI, Tableau, D3.js and Spark. </strong></h3>
+          <div class="col-lg-6 pt-4 pt-lg-0 content data">
+            <h3>Proficient in <span style="color:orange; ">Business Analytics</span> with <strong> Power BI, Tableau, D3.js and PySpark. </strong></h3>
             <br><br>
 
             <div class="skills-content">
               <div class="progress">
-                <span class="skill">Machine Learning<i class="val">95%</i></span>
+                <span class="skill">Python & Machine Learning<i class="val">95%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">Python <i class="val">90%</i></span>
+                <span class="skill">PostGreSQL, SQL, MongoDB & Hadoop <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">Power BI & Tableau <i class="val">80%</i></span>
+                <span class="skill">Power BI, Tableau & D3.js <i class="val">80%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">Python Spark  <i class="val">70%</i></span>
+                <span class="skill">Advanced Excel, Pandas & Seaborn  <i class="val">70%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
+
+              <div class="progress">
+                <span class="skill">A/B Testing, Hypothesis Testing  <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
               
               <div class="progress">
-                <span class="skill">Docker & Kubernetes<i class="val">60%</i></span>
+                <span class="skill">SAS, CI/CD & PySpark<i class="val">60%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -402,26 +463,40 @@
         </div>
         
         <div class="resume-item">
+          <h4 class="georgia">Georgia Institute of Technology, Atlanta</h4>
+          <h5>Starting Fall 2025</h5>
+          <p><em><b>M.S. in Data Analytics</b></em></p>
+          <p style="text-align: justify;"> 
+            ➛ Proud to join one of the Top-5 CS ranked institutions globally, renowned for its cutting-edge Data Science program. <br>
+            ➛ Major in Business Analytics track, focusing on data-driven decision-making, market insights and predictive modeling at Georgia Tech. 
+            
+          </p>
+          <a href="https://drive.google.com/file/d/1N2-VLmmldeNk-GqSer9E0eV1vIZVZkpi/view?usp=drive_link" style="text-decoration: none; color: cyan;" class="offer-button" target="_blank">View Offer Letter</a>
+        </div>
+
+        <div class="resume-item">
           <h4>Fordham University, New York</h4>
           <h5>2024 - Ongoing</h5>
           <p><em><b>M.S. in Computer & Information Science</b></em></p>
           <p style="text-align: justify;"> 
-            - As a Full-time Graduate Student, 90% of my Tution Fee is funded by GSAS Centennial Scholarship. <br>
-            - Developing expertise in areas including but not limited to Data Science, Trustworthy AI, Human-Computer Interaction and Analytics. 
+            ➛ As a Full-time Graduate Student, 90% of my Tution Fee is funded by GSAS Centennial Scholarship. <br>
+            ➛ Developing expertise in areas including but not limited to Data Science, Trustworthy AI, Human-Computer Interaction and Analytics. 
             
           </p>
+          <a href="https://drive.google.com/file/d/1bTwauuJr7gJAwbu4QpKgftWgPq5k-IKB/view?usp=drive_link" style="text-decoration: none; color: cyan;" class="offer-button" target="_blank">View Offer Letter</a> 
         </div>
+
         <div class="resume-item">
           <h4>North South University, Dhaka</h4>
           <h5>2020 - 2023</h5>
           <p><em><b>B.Sc in Computer Science & Engineering</b></em></p>
           <p style="text-align: justify;"> 
-          - Engaged in a comprehensive curriculum covering key areas such as Algorithms, Data Structures, Software Engineering, Theory of Computation and Machine Learning. <br>
-            
-            - Collaborated with peers on team projects, honing teamwork and communication skills.
+            ➛ Engaged in a comprehensive curriculum covering key areas such as Algorithms, Data Structures, Software Engineering, Theory of Computation and Machine Learning. <br>
+           
           </p>
         </div>
-        <div class="resume-item">
+
+        <!-- <div class="resume-item">
           <h4>Govt. Hazi Muhammad Mohsin College, Chittagong</h4>
           <h5>2017 - 2019</h5>
           <p><em><b>Higher Secondary Certificate [H.S.C]</b></em></p>
@@ -429,7 +504,8 @@
             - Achieved a strong academic foundation in Science <br>
             - Demonstrated a commitment to academic excellence and personal development.
           </p>
-        </div>          
+        </div> 
+
        <div class="resume-item">
         <h4>Govt. Muslim High School, Chittagong</h4>
         <h5>2011 - 2017</h5>
@@ -438,7 +514,8 @@
           - Attended school from 2011 to 2017. <br>
           - Excelled in academic coursework, laying a strong foundation for future studies. <br>
         </p>
-      </div>
+      </div> -->
+
      </div>
      
 
@@ -456,17 +533,18 @@
           <h5>2023 - Ongoing</h5>
           <p><em><b>Graduate Research Assistant</b></em></p>
           <p style="text-align: justify;">
-          -  Working under the guidance and supervision of Professor Nova Ahmed. <br>
-          - Experimenting with various feature selection strategies and explainability in the context of the Credit Scoring project in order to lessen the load on South Asians' banks and credit defaulters. <br>
-            - Engaging in state-of-the-art techniques such as Explainable AI, Federated Learning and Human Computer Interaction. <a target='_blank' href="https://sites.google.com/view/nsuhci/people">Find me</a>
+            ➛ Working under the guidance and supervision of Dr. Nova Ahmed. <br>
+          ➛ Experimenting with various feature selection strategies and explainability in the context of the Credit Scoring project in order to lessen the load on South Asians' banks and credit defaulters. <br>
+            ➛ Engaging in state-of-the-art techniques such as Explainable AI, Federated Learning and Human Computer Interaction. <a target='_blank' href="https://sites.google.com/view/nsuhci/people">Find me</a>
           </p>
         </div>
         <div class="resume-item">
           <h4>Systech Datasoft</h4>
           <h5>2023 - 2024</h5>
           <p><em><b>Trainee Engineer (Data Science)</b></em></p>
-          <p style="text-align: justify;"> - Contributed to the development of innovative solutions in Data Science and IoT device applications. <br>
-            - Implemented a PDF parser to enhance the efficiency of Resume Screening from PDF for the hiring jobs.
+          <p style="text-align: justify;"> 
+            ➛ Contributed to the development of innovative solutions in Data Science and IoT device applications. <br>
+            ➛ Implemented a PDF parser to enhance the efficiency of Resume Screening from PDF for the hiring jobs.
           </p>
         </div>
         <div class="resume-item">
@@ -474,17 +552,18 @@
           <h5>2020 - 2021</h5>
           <p><em><b>Content Writing and Publication</b></em></p>
           <p style="text-align: justify;">
-          - Collaborated with a diverse team to ensure accurate and engaging representation of IEEE NSU Student Branch initiatives. <br>
-          
+            ➛ Collaborated with a diverse team of INSB. <br>
+            ➛ Contributed to  articles and promotional content to highlight technical events and achievements effectively.
           </p>
-        </div>          
-      <div class="resume-item">
+        </div>    
+
+      <!-- <div class="resume-item">
         <h4>NSU ACM Student Chapter</h4>
         <h5>2020 - 2021</h5>
         <p><em><b>Team Provision</b></em></p>
         <p style="text-align: justify;">- Actively participated in events and initiatives organized by NSU ACM, fostering a vibrant learning environment.  <br>
-</p> 
-      </div>
+        </p> 
+      </div> -->
     </div>
 
 
@@ -519,7 +598,7 @@
                   </div>
                   <div class="social">
                     
-                    <a href="https://nsu-discussion-forum.000webhostapp.com/home.php" class="btn-get-started" target ="blank"><button class="btn btn-outline-light">view </button></a>
+                    <a href="https://github.com/Monirules/NSU-Discussion-Forum" class="btn-get-started" target ="blank"><button class="btn btn-outline-light">view </button></a>
                   </div>
                 </div>
               </div>
@@ -660,6 +739,39 @@
                 </div>
               </div>
 
+              <br>
+
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+                <div class="member">
+                  <img src="assets/img/dataverse.jpg" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+                  <div class="member-info">
+                    <div class="member-info-content">
+                      <h4>DataVerse - Q/A Platform</h4>
+                      <span>Developed using JS, Ajax & MongoDB</span>
+                    </div>
+                    <div class="social">
+                      
+                      <a href="https://github.com/Monirules/DataVerse" class="btn-get-started" target ="blank"><button class="btn btn-outline-light">view </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+                <div class="member">
+                  <img src="assets/img/linkedin.jpg" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+                  <div class="member-info">
+                    <div class="member-info-content">
+                      <h4>LinkedIn Job Analysis 2024</h4>
+                      <span>Uncover trends in top industries, skills in USA </span>
+                    </div>
+                    <div class="social">
+                      
+                      <a href="https://public.tableau.com/app/profile/monirul.mahmud/viz/UnveilingtheLinkedInJobHuntSkillIndustryandSalaryTrendsinUSA/Story1" class="btn-get-started" target ="blank"><button class="btn btn-outline-light">view </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           </div>
           </div>
@@ -676,7 +788,7 @@
 
 
 
-    <div class="container mt-5">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="container">
           <div class="section-title">
@@ -695,6 +807,10 @@
               <p>59 ST Columbus Circle - 25/11/2024</p>
             </div>
             <div class="gallery-item">
+              <img src="assets/img/brooklyn.jpeg" alt="Brooklyn Bridge">
+              <p>9th Avenue, NY - 9/01/2025</p>
+            </div>
+            <div class="gallery-item">
               <img src="assets/img/usa10.jpeg" alt="West 60">
               <p>West 60 ST- 25/11/2024</p>
             </div>
@@ -707,37 +823,30 @@
               <p>Kaiser Park, NY - 28/08/2024</p>
             </div>
             <div class="gallery-item">
+              <img src="assets/img/snow.jpg" alt="Snow Image">
+              <p>Snow at NYC - 20/12/2024</p>
+            </div>
+            <div class="gallery-item">
               <img src="assets/img/usa5.jpeg" alt="Central Park">
               <p>Central Park, NY - 15/08/2024</p>
             </div>
-            <div class="gallery-item">
-              <img src="assets/img/fordham_class.jpg" alt="Fordham Classroom">
-              <p>Fordham Classroom - 19/09/2024</p>
-            </div>
+            
             <div class="gallery-item">
               <img src="assets/img/neptune.jpg" alt="Neptune Ave">
               <p>Fishing: Neptune Ave - 06/10/2024</p>
             </div>
-            <div class="gallery-item">
-              <img src="assets/img/fdr.jpg" alt="FDR Driveway">
-              <p>FDR Driveway - 23/08/2024</p>
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/usa12.jpg" alt="Trump Tower">
-              <p>Trump Tower - 14/08/2024</p>
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/usa11.jpg" alt="McMahon Hall">
-              <p>McMahon Hall Fordham - 14/08/2024</p>
-            </div>
+ 
+            
             <div class="gallery-item">
               <img src="assets/img/usa13.jpg" alt="Times Square">
               <p>Times Square - 23/09/2024</p>
             </div>
+
             <div class="gallery-item">
-              <img src="assets/img/brooklyn.jpg" alt="Brooklyn Bridge">
-              <p>Brooklyn Bridge, NY - 23/08/2024</p>
+              <img src="assets/img/usa12.jpg" alt="Trump Tower">
+              <p>Trump Tower - 14/08/2024</p>
             </div>
+
           </div>
           <button class="gallery-nav next">&gt;</button>
         </div>
@@ -803,10 +912,12 @@
               <strong>Email:</strong> mahmudislam2025@gmail.com<br>
             </p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/profile.php?id=100093385280290" class="facebook" target="blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://twitter.com/mahmud_monirul" class="twitter" target="blank"><i class="bx bxl-twitter"></i></a>
               
-              <a href="https://github.com/Monirul-Islam-Mahmud" class="github" target="blank"><i class="bx bxl-github"></i></a>
+              <a href="https://twitter.com/mahmud_monirul" class="twitter" target="blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://scholar.google.com/citations?user=9pLzr9UAAAAJ&hl=en" target="_blank">
+                <span class="iconify" data-icon="simple-icons:googlescholar" data-inline="false"></span>
+              </a>
+              <a href="https://github.com/Monirules" class="github" target="blank"><i class="bx bxl-github"></i></a>
               <a href="https://www.linkedin.com/in/monirul-islam-mahmud-261a7a1bb" class="linkedin" target="blank"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
@@ -892,7 +1003,7 @@ function updateGallery() {
   });
 
   // Shift the gallery
-  const offset = -(currentIndex - 6) * 210; // Adjust width based on item size + gap
+  const offset = -(currentIndex - 5) * 220; // Adjust width based on item size + gap
   wrapper.style.transform = `translateX(${offset}px)`;
 }
 
@@ -911,6 +1022,33 @@ nextButton.addEventListener('click', () => {
 // Initialize the gallery
 updateGallery();
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.getElementById('body');
+
+  // Debugging to see if multiple listeners are attached
+  console.log('Event listener attached');
+
+  darkModeToggle.addEventListener('click', (event) => {
+    console.log('Button clicked'); // Should appear only once per click
+    event.stopPropagation(); // Prevent event interference
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+    darkModeToggle.textContent = body.classList.contains('dark-mode') 
+      ? 'Light Mode' 
+      : 'Dark Mode';
+  });
+});
+
+
+</script>
+
+<!-- Iconify CDN -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
 </body>
 
 </html>
