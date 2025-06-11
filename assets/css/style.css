@@ -323,8 +323,9 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo-img {
   margin-right: 20px;
   margin-left: 10px;
-  max-height: 45px;
-  max-width: 45px;
+  
+  max-height: 55px;
+  max-width: 55px;
 }
 
 
