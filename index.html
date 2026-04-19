@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Monirul I Mahmud</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/image100.png" rel="icon">
+  <link href="assets/img/image100.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<!-- Add Font Awesome CDN -->
+<!-- Font Awesome 6 CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .marquee-style {
+      background-color: #f0f0f0; 
+      color: #464242; 
+      
+      padding: 8px 0;
+      font-size: 16px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .about-left,
+    .about-right {
+      width: 48%;
+    }
+
+    .about-right {
+      border-left: 2px solid #ddd;
+      padding-left: 20px;
+    }
+
+    .news-container {
+      overflow-y: auto; 
+      max-height: 340px; 
+      padding-top: 10px; 
+    }
+
+    .news-item {
+      display: flex; 
+      align-items: center; 
+      margin-bottom: 10px; 
+    }
+
+    .news-date {
+      background: linear-gradient(45deg, #8bc34a, #aed581); 
+      color: white; 
+      font-size: 0.9em; 
+      font-weight: bold; 
+      padding: 3px 10px; 
+      border-radius: 5px; 
+      text-transform: uppercase; 
+      margin-right: 10px; 
+      flex-shrink: 0; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    .news-text {
+      flex-grow: 1; 
+      text-align: justify;
+      color: #5f7c78;
+      padding-right: 14px;
+    }
+
+    .about-right h2{
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      color: #4b605c;
+    }
+
+    span{
+      font-weight: 500;
+    }
+
+
+    .image-gallery {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .gallery-wrapper {
+      display: flex;
+      gap: 1px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .gallery-item {
+      text-align: center;
+      flex-shrink: 0;
+      width: 250px;
+      opacity: 0.5;
+      transform: scale(0.8);
+      transition: all 0.5s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      filter: blur(3px);
+      transition: all 0.5s ease;
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      
+    }
+
+    .gallery-item.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .gallery-item.active img {
+      filter: blur(0);
+    }
+
+    .gallery-nav {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background-color: white;
+      border: none;
+      font-size: 2rem;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+    }
+
+    .gallery-nav:hover {
+      background-color: #8bc34a;
+      color: white;
+    }
+
+    .gallery-nav.prev {
+      left: 10px;
+    }
+
+    .gallery-nav.next {
+      right: 10px;
+    }
+
+    .dark {
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      font-size: 13px; /* Adjust font size as needed */
+      padding: 8px 14px; /* Padding for button */
+      margin-top: 3px;
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0px 4px 6px rgba(153, 153, 153, 0.4); 
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: all 0.4s ease; /* Smooth transition */
+    }
+
+    .dark:hover {
+      box-shadow: 0px 6px 10px rgba(128, 128, 128, 0.6); /* Deeper grey shadow on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+      background-color: #ffffff; /* Slightly off-white background */
+    }
+
+    @media (max-width: 991.98px) {
+      .about-container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .about-container > .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .about-container .col-md-6,
+      .about-container .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .social-link-row {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .news-item {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .news-date {
+        margin-bottom: 8px;
+        margin-right: 0;
+      }
+
+      .news-text {
+        padding-right: 0;
+      }
+
+      .image-gallery {
+        padding: 0 42px;
+      }
+
+      .gallery-item {
+        width: 180px;
+      }
+
+      .gallery-nav {
+        font-size: 1.4rem;
+        padding: 8px 14px;
+      }
+    }
+    </style>
+    
+</head>
+
+<body id="body" class="dark-mode">
+
+
+  <!-- ======= Navbar Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+  
+        <div class="carousel-inner" role="listbox">
+  
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="assets/img/103.webp" alt="Monirul Islam Mahmud"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"> 
+                  <span style="color:#ff9d41; ">Hi there! </span> 
+                  <span style="color: rgb(255, 255, 255);">I'm Monirul</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">"Just a Guy Securing the Neural Network." <br> Researcher | AI Security & Privacy <br></p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Explore</a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Slide 2 -->
+           <!--<div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/cincy5.png" alt="Georgia Tech Campus"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span style="color: rgb(238, 255, 82);">University of Cincinnati</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  
+                  Ph.D. in Computer Science & Engineering <br>
+                  Major in Cybersecurity Track.
+                </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Go Bearcats!</a>
+              </div>
+            </div>
+          </div>-->
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/fordham-university-rose-hill-campus.webp" alt="fordham university"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span style="color: rgb(238, 255, 82);">Fordham University</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  M.S. in Computer & Information Science <br>
+                  Major in Cybersecurity Track
+                </p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Let's Go Rams!</a>
+              </div>
+            </div>
+          </div>
+  
+         
+  
+        </div>
+  
+        <!-- Navigation -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-thin-double-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+  
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-thin-double-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+
+  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="container d-flex">
+    <div class="logo-img">
+      <a href="index.html"><img src="assets/img/image100.png" alt="" class="img-fluid"></a>
+    </div>
+    <div class="logo d-flex align-items-center justify-content-between">
+      <h1 class="text-light">
+        <a href="index.html"><span>Monirul I. Mahmud</span></a>
+      </h1>
+      <button id="darkModeToggle" class="dark ms-3" style="font-size: 13px; padding:8px;">Light Mode</button>
+    </div>
+
+    <!-- Aligning the navigation menu to the right -->
+    <nav class="nav-menu d-none d-lg-block ml-auto">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#services">Projects</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- nav-menu -->
+  </div>
+</header>
+
+  <!-- End Header -->
+
+
+  
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+
+    <section id="about" class="about">
+      <div class="container">
+        <!-- <marquee class="marquee-style" scrollamount="12">Exciting News 🎉 My paper, titled "Optimizing Stroke Detection: An Analysis of Various Feature Selection Methods" has been accepted at the prestigious UbiComp 2024 Conference, Australia.</marquee> -->
+
+
+  <br><br>
+
+
+
+  <div class="container about-container">
+    <div class="row">
+      <!-- Left Section: About Me -->
+      <div class="col-md-6 col-sm-6">
+        <div class="section-title">
+          <h2>Chapter So Far</h2>
+          <hr style="background-color: #77eaf0; height: 2px; border: none;">
+          <p style="text-align: justify;"> <br>
+            A curious man with a deep passion for areas in Multimodal AI, Blockchain, differential privacy, Machine Learning and Zero-Shot Vision-Language Models (VLM). Proficient in Python, TensorFlow, D3.js, Tableau, Matlab, PySpark, and committed to continuously advancing my expertise in these areas. 
+  
+            As a Graduate student at Georgia Tech and Fordham University, I like to embrace cultural diversity, engage in interdisciplinary projects and contribute to creating sustainable solutions. Beside my academic and professional pursuits, I enjoy Football, Traveling, Hiking, and immersing myself in Space Innovations. 
+  
+            Let's connect and explore the Dynamic World of Data together!
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right Section: Notable News -->
+      <div class="col-md-6 col-sm-6 section-title">
+        <h2>Latest Updates</h2>
+        <hr>
+        <div class="news-container">
+          <div class="news-item">
+            <span class="news-date">APR 2026</span>
+            <p class="news-text">Proud to announce my first IEEE Transactions paper in IEEE TCE (IF: 10.9), on Reputation-driven Federated Learning for secure & consumer-centric IoMT. DOI: https://doi.org/10.1109/TCE.2026.3685994 </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">Feb 2026</span>
+            <p class="news-text">I'm excited to share that I’ve been accepted to  the PhD in Computer Science at the <span>University of Cincinnati</span>, <span>UT Arlington</span>, <span>University of Georgia</span> and <span>Lousiana State University</span> from Fall 2026! </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">Dec 2025</span>
+            <p class="news-text">Another Q1 Journal Acceptance: <span>Attention and Residual Mechanism-based CNN Architecture (ARC-Net) with Enhanced Fairness Generalization for Deepfake Facial Image Detection</span> </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">SEP 2025</span>
+            <p class="news-text">Our paper <span> "DFU_DIALNet" </span> is now online! DOI: https://doi.org/10.1371/journal.pone.0330669 </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">AUG 2025</span>
+            <p class="news-text">Our paper <span> "DFU_DIALNet: Towards Reliable and Trustworthy Diabetic Foot Ulcer Detection with Synergistic Confluence of Grad-CAM and LIME" </span> is accepted at PLoS ONE (Q1 Tier)! </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">DEC 2024</span>
+            <p class="news-text">A proud milestone in my journey—I've been accepted into the M.S. in Analytics program at <span> Georgia Institute of Technology</span>! Very excited to join one of the world's Top 10 CS Ranked universities. </p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">NOV 2024</span>
+            <p class="news-text">Our paper <span>"Linear Discriminant Analysis in Credit Scoring: A Transparent Hybrid Model Approach"</span> has been accepted to IEEE International Conference on Computer and Information Technology (ICCIT) 2024.</p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">Oct 2024</span>
+            <p class="news-text">Our paper, titled <span>"Optimizing Stroke Detection: An Analysis of Various Feature Selection Methods"</span> has been published online (doi: 10.1145/3675094.3677602) at the <span>UbiComp 2024 Conference, Australia.</span></p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">MAY 2024</span>
+            <p class="news-text">I am honored to serve as the Reviewer in peer-reviewed <span>IEEE Pervasive Computing.</span></p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">Mar 2024</span>
+            <p class="news-text">I have started my Masters in Computer & Information Science at <span>Fordham University, New York</span> with GSAS Centennial Scholarship.</p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">DEC 2023</span>
+            <p class="news-text">I am officially graduated from <span>North South University</span> with a Bachelors in Computer Science & Engineering.</p>
+          </div><hr>
+          <div class="news-item">
+            <span class="news-date">Jul 2023</span>
+            <p class="news-text">I have started working as Research Assistant at Design Inclusion & Access Lab (DIAL). Working on the project - <span>'Feasibility of Alternative Credit Scoring for the Credit Invincibles of Bangladesh'</span>
+              funded by <span>NSU-CTRG</span> (CTRG-23-SEPS-02) </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br><br>
+  </div>
+  
+<br>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/1 (1).jpg" class="img-fluid" style="box-shadow: 0 0 15px 1px cyan;" width="85%" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content data">
+            <h3 style="text-align:justify;">Interested in <span style="color:orange; ">Security & Privacy</span> in <strong> Multimodal AI and  Zero-Shot VLM. </strong></h3>
+            <br><br>
+
+            <div class="skills-content">
+              <div class="progress">
+                <span class="skill">Blockchain, Security, Smart Contract <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Machine Learning, PostGreSQL, SQL & MongoDB <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Python, PySpark, Pandas & Seaborn  <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Power BI, Tableau & D3.js <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              
+
+              <div class="progress">
+                <span class="skill">A/B Testing, Hypothesis Testing  <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              
+              
+              <br>
+              <div class="social-link-row" style="display: flex; gap: 16px; margin-top: 5px;">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/monirul-islam-mahmud" target="_blank" 
+                  style="background-color: #0077B5; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-size: 26px;">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/monirules" target="_blank" 
+                  style="background-color: #333; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none;font-size: 26px;">
+                  <i class="fab fa-github"></i>
+                </a>
+
+                <!-- ORCID -->
+                <a href="https://orcid.org/0009-0005-2812-8553" target="_blank" 
+                  style="background-color: #A6CE39; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none;font-size: 26px;">
+                  <i class="fab fa-orcid"></i>
+                </a>
+
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.com/citations?hl=en&user=9pLzr9UAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" 
+                  style="background-color: #4285F4; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none;font-size: 26px;">
+                  <i class="fas fa-graduation-cap"></i>
+                </a>
+
+                <!-- CV Button -->
+                <a href="Monirul CV.pdf" 
+                  target="_blank"
+                  style="background-color: #34A853; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-size: 26px;">
+                  <i class="fas fa-file-alt"></i>
+                </a>
+              </div>
+              <!-- <button id="download-cv" style="margin-left: 11px;">Download CV</button> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- End About Us Section -->
+
+    <br><br>
+
+<!-- ======= My Education Section ======= -->
+
+<section id="education" class="resume">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-title">
+      
+          <h2>Education</h2><hr style="background-color: #77eaf0; height: 2px; border: none;">
+        </div>
+        
+        <!-- <div class="resume-item">
+          <h4 class="georgia">University of Cincinnati, Ohio</h4>
+          <h5>Starting Fall 2026</h5>
+          <p><em><b>Ph.D. in Computer Science & Engineering</b></em></p>
+          <p style="text-align: justify;"> 
+            ➛ Awarded a <b>University Graduate Assistantship (UGA)</b> with a full tuition scholarship and a <b>$31,486</b> annual stipend. <br>
+            ➛ Research focus on the <b>Cybersecurity track</b>, specializing in privacy-preserving machine learning, Federated Learning, and blockchain-based IoT security. 
+            <a href="https://drive.google.com/file/d/1m_GTruG3WLiU-PUBeix3xHL-2S6ta3eO/view?usp=sharing" style="text-decoration: none; color: cyan;" class="offer-button" target="_blank"> [Offer Letter]</a>
+          </p>
+        </div> -->
+
+        <div class="resume-item">
+          <h4>Fordham University, New York</h4>
+          <h5>2024 - 2026</h5>
+          <p><em><b>M.S. in Computer & Information Science</b></em></p>
+          <p style="text-align: justify;"> 
+            ➛ As a Full-time Graduate Student, 90% of my Tution Fee is funded by GSAS Centennial Scholarship. <br>
+            ➛ Developing expertise in areas including but not limited to Smart Contracts, Distributed Ledger systems, Trustworthy AI, Text Mining and Graph Mining. <a href="https://drive.google.com/file/d/1YtfSU_Aezknff4jTkvOZbSIwddjimC5z/view?usp=sharing" class="btn-get-started" target ="blank" style="text-decoration: none; color: #66fff2; margin-left: 8px;">[Transcript]</a>
+            
+          </p>
+          
+        </div>
+
+        <div class="resume-item">
+          <h4>North South University, Dhaka</h4>
+          <h5>2020 - 2023</h5>
+          <p><em><b>B.Sc in Computer Science & Engineering</b></em></p>
+          <p style="text-align: justify;"> 
+            ➛ Engaged in a comprehensive curriculum covering key areas such as Algorithms, Data Structures, Software Engineering, Theory of Computation and Machine Learning. <a href="https://drive.google.com/file/d/1x7raKQNmjegj58jEvPwgkOxC7-US3BON/view?usp=drive_link" class="btn-get-started" target ="blank" style="text-decoration: none; color: #66fff2;">[Transcript]</a><a href="https://drive.google.com/file/d/17yaCOc83yo-UGe6tBePQDn6jl6ti7xql/view?usp=sharing" class="btn-get-started" target ="blank" style="text-decoration: none; color: #66fff2; margin-left: 8px;">[Certificate]</a>
+           
+          </p>
+        </div>
+     </div>
+     
+
+  <!-- ======= My Experience Section ======= -->
+
+      <div class="col-lg-6">
+
+        <div class="section-title">
+        
+          <h2>Experience</h2><hr style="background-color: #77eaf0; height: 2px; border: none;">
+        </div>
+          
+	 <div class="resume-item">
+          <h4>Fordham University</h4>
+          <h5>2025 - 2026</h5>
+          <p><em><b>Research Assistant</b></em></p>
+          <p style="text-align: justify;">
+            
+            ➛ Working under <a target='_blank' href="https://scholar.google.com/citations?hl=en&user=u3J2tc0AAAAJ&view_op=list_works&sortby=pubdate" style="color: #66fff2;">Prof. Mohamed Rahouti</a> on a <span>'Blockchain-Empowered Proof of Reputation (PoR)-Driven Federated Learning for Secure Medical Data Sharing'</span> (Under Review, <b>IEEE TCE</b>). <br>
+            ➛ Developed <span>'A Merkle Tree and ZKP enhanced Secure Credit Scoring'</span> (Under Review, <b>IEEE TIFS)</b>.
+            
+          </p>
+        </div>
+
+
+        <div class="resume-item">
+          <h4>Design Inclusion and Access Lab (DIAL)</h4>
+          <h5>2024 - 2025</h5>
+          <p><em><b>Graduate Research Assistant</b></em></p>
+          <p style="text-align: justify;">
+            
+            ➛ Team Lead of Medical Imaging group - mentoring 5 members to ensure successful project execution under the supervision of <a target='_blank' href="https://scholar.google.com/citations?hl=en&user=rXMM2MwAAAAJ&view_op=list_works&sortby=pubdate" style="color: #66fff2;">Prof. Nova Ahmed</a>. <br>
+            ➛ Worked on 2 projects - <i>'Attention and Residual Mechanism-based Deepfake Recognition'</i> and
+          <i>‘DFU_DIALNet: Reliable and Trustworthy Diabetic Foot Ulcer Detection’</i> projects. <a target='_blank' href="https://sites.google.com/view/nsuhci/people" style="color: #66fff2;">Find me</a>
+          </p>
+        </div>
+
+        <!--<div class="resume-item">
+          <h4>Systech Datasoft</h4>
+          <h5>2023 - 2024</h5>
+          <p><em><b>Trainee Engineer (Data Science)</b></em></p>
+          <p style="text-align: justify;"> 
+            ➛ Gain hands on experience in t-tests, ANOVA, Markov Chain methods. <br>
+            ➛ Implemented a PDF parser to enhance the efficiency of Resume Screening from PDF for the hiring jobs. <a target='_blank' href="https://drive.google.com/file/d/1gNs75QK9h6CV0_XHwUN9Do0xuakXCcDU/view?usp=sharing" style="color: #66fff2;">Certificate</a>
+          </p>
+        </div>-->
+        
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End My Education Section -->
+
+
+
+
+   
+
+<!-- ======= Our Project Section ======= -->
+<div id="services">
+<section id="services" class="team">
+<div class="container">
+
+<div class="section-title">
+<h2>Recent Projects</h2>
+<hr style="background-color: #77eaf0; height: 2px; border: none;"><br>
+
+<div class="row justify-content-center">
+
+<!-- 1 -->
+
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/FairRate.webp" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>FairRate for Uber/Lyft</h4>
+<span>Fair Star Rating for Ride-sharing Platform's Driver</span>
+</div>
+<div class="social">
+<a href="https://drive.google.com/file/d/1mdI3dJV3OjqV1jWDuZvf32pGhhrXcZPZ/view?usp=sharing" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/vlm.jpg" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>VLM Jailbreaking</h4>
+<span>Survey on Adversarial Attacks on Vision-Language Models</span>
+</div>
+<div class="social">
+<a href="https://drive.google.com/file/d/1eH6SqybsdrXzUeZfFKLqIBRp_Mht0SHD/view?usp=sharing" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/img100.png" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Secure WBAN/IoMT System</h4>
+<span>Blockchain based FL with Proof of Reputation (PoR)</span>
+</div>
+<div class="social">
+<a href="https://drive.google.com/file/d/1lD4l2vI3Gej6Tbt4ULght0l_0uU-V0YN/view" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/keylogger.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Trustworthy Keylogger detection</h4>
+<span>Ensemble and Feature Selections through Explainable AI</span>
+</div>
+<div class="social">
+<a href="https://arxiv.org/pdf/2505.16103" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/clip.jpg" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Hyperbolic CLIP for Cloud Perception</h4>
+<span>Open-Vocabulary Segmentation in Ground-Based Imagery</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirules/Ground-based-Cloud-Segmentation" class="btn-get-started"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/deepfake.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Attention & Residual based DeepFake</h4>
+<span>ARC-Net with XAI for Deepfake Image Detection</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirules/Attention-and-Residual-Mechanism-Enhanced-DeepFake-Detection" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/cloud.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Ground based Cloud Segmentation</h4>
+<span>U-Net based FCNN for sharper Sky insights</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirules/Ground-based-Cloud-Segmentation" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/merkle.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Markle Tree based Credit Scoring</h4>
+<span>Trustworthy Zero-Knowledge Proof Enhanced Approach</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirules/Merkle-Tree-Enhanced-Credit-Score" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- 9 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/human.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Elderly People Activity Recognition</h4>
+<span>Multi-Head Temporal Attention based Bi-LSTM Approach</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirul-Islam-Mahmud/Human-Activity-Recognition" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/dfu.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>GradCam based Diabetic Foot Ulcer</h4>
+<span>Trustworthy proposed DFU_DIALNet to detect DFU</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirules/DFU-PlosOne" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/stroke.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>PCA & LDA based Stroke Detection</h4>
+<span>Linear Discriminant Analysis with XAI</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirul-Islam-Mahmud/Stroke-Prediction" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/credit.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Alternative Credit Scoring</h4>
+<span>Multi-Domain Validation of Bayesian Optimized Ensembles</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirul-Islam-Mahmud/Alternative-Bank-Credit-Score-Prediction" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 13 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/health.png" class="img-fluid" style="min-height: 290px;max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Health Express BD</h4>
+<span>Emergency Ambulance, Medicine & Doctor.</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirul-Islam-Mahmud/Healthcare-Express-BD" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 14 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/study.png" class="img-fluid" style="min-height: 290px; max-height: 295px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>Student Study Portal</h4>
+<span>Definition, Books, Homework, Task.</span>
+</div>
+<div class="social">
+<a href="https://github.com/Monirul-Islam-Mahmud/NSU-Study-Portal/" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 15 -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" data-wow-delay="0.4s">
+<div class="member">
+<img src="assets/img/linkedin.jpg" class="img-fluid" style="min-height: 290px; max-height: 300px;" alt="">
+<div class="member-info">
+<div class="member-info-content">
+<h4>LinkedIn Job Analysis 2024</h4>
+<span>Uncover trends in top industries, skills in USA</span>
+</div>
+<div class="social">
+<a href="https://public.tableau.com/app/profile/monirul.mahmud/viz/UnveilingtheLinkedInJobHuntSkillIndustryandSalaryTrendsinUSA/Story1" class="btn-get-started" target="blank"><button class="btn btn-outline-light">view</button></a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+</div>
+<!-- End Our Portfolio Section -->
+
+
+
+
+
+    <div class="container" id="dataset">
+    <div class="row justify-content-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benchmark Datasets</h2>
+               
+                <hr style="background-color: #77eaf0; height: 2px; border: none;"> </div>
+        </div>
+
+        <div class="col-lg-10"> <div class="datasets-list" style="text-align: justify;">
+                <div class="dataset-item">
+                    <h3>1. Human Activity Recognition from Wearable Sensors</h3>
+                    <p>A comprehensive dataset of 72,000 readings of 6 persons, collected using a 3D accelerometer and gyroscope sensor from Rasperry PI 4 Device. We also proposed a mobile app to collect and tracking human activity.</p>
+                    <p><strong>Dataset Link:</strong> (Coming soon)</p>
+                </div>
+                <hr> <div class="dataset-item">
+                    <h3>2. Diabetic Foot Ulcer Dataset</h3>
+                    <p>A specialized image dataset comprising 500 foot images (250 normal, 250 with ulcers) for the detection of Diabetic Foot Ulcers. This dataset was collected with approval from the North South University IRB/ERC (Application No. 2024/OR-NSU/IRB/1110).</p>
+                    <p><strong>Dataset Link:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNk4YnKKaJI-Wc6_N3XffRvZxWTQd4KgH_lu4gfRqJQw5sow/viewform" target="_blank" rel="noopener noreferrer" style="color: #66fff2;">Click Here</a></p>
+                </div>
+                <hr>
+
+                <div class="dataset-item">
+                    <h3>3. DeepFake and Real Face Image Collection</h3>
+                    <p>A dataset of 500 facial images, including real Bangladeshi individuals of diverse genders and ages, collected with explicit written consent for deepfake detection research. Data collection was approved by North South University IRB/ERC (Application No. 2024/OR-NSU/IRB/1109).</p>
+                    <p><strong>Dataset Link:</strong> <a href="https://shorturl.at/YmODF" target="_blank" rel="noopener noreferrer" style="color: #66fff2;">Click Here</a></p>
+                </div>
+                <hr>
+
+                <div class="dataset-item">
+                    <h3>4. Ground-Based Cloud Segmentation Dataset</h3>
+                    <p>A segmented dataset of 110 ground-based cloud images, meticulously annotated using Roboflow. This dataset was developed for training and evaluating U-Net based Fully Convolutional Neural Networks (F-CNN) for cloud segmentation tasks.</p>
+                    <p><strong>Dataset Link:</strong> (Coming soon)</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+
+<div class="container" id="publication">
+    <div class="row justify-content-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>Publications</h2>
+                <hr style="background-color: #77eaf0; height: 2px; border: none;">
+            </div>
+        </div>
+
+        <div class="col-lg-10"> <div class="publications-list" style="text-align: justify;">
+                <ol>
+                  
+
+                  <li>
+                        M. I. Mahmud, J. Bieniek, M. Rahouti, A. Chehri, and G. Jeon.  <strong>"Trustworthy Consumer-Centric IoMT: Reputation-Driven Federated Learning for Secure Medical Data Sharing,"</strong> <em>IEEE Transactions on Consumer Electronics. 2026.  </em> DOI: <a href="https://doi.org/10.1109/TCE.2026.3685994" target="_blank" rel="noopener noreferrer"> 10.1109/TCE.2026.3685994</a>.
+                    </li><br>
+                    <li>
+                        M. S. Reza, F. Elias, M. I. Mahmud, and N. Ahmed, <strong>"Attention and Residual Mechanism-based CNN Architecture (ARC-Net) with Enhanced Fairness Generalization for Deepfake Facial Image Detection,"</strong> <em>PLoS ONE.</em> 2026.
+                        <a href="https://doi.org/10.1371/journal.pone.0340099" target="_blank" rel="noopener noreferrer">DOI: 10.1371/journal.pone.0340099</a>.
+                    </li><br>
+		                <li>
+                        M. I. Mahmud, M. S. Reza, M. O. A. Akash, F. Elias, and N. Ahmed. 2025. <strong>“DFU_DIALNet: Towards reliable and trustworthy diabetic foot ulcer detection with synergistic confluence of Grad-CAM and LIME,”</strong> <em>PLoS ONE, vol. 20, no. 9, p. e0330669,</em> USA. <a href="https://doi.org/10.1371/journal.pone.0330669" target="_blank" rel="noopener noreferrer">DOI: 10.1371/journal.pone.0330669.</a>.
+                    </li><br>
+
+                    <li>
+                        M. I. Mahmud, M. S. Reza, and S. S. Khan. 2024. <strong>“Optimizing Stroke Detection: An Analysis of Different Feature Selection Approaches.”</strong> In <em>Companion of the 2024 on ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp '24)</em>, Melbourne VIC, Australia, 142–146.
+                        <a href="https://doi.org/10.1145/3675094.3677602" target="_blank" rel="noopener noreferrer">DOI: 10.1145/3675094.3677602</a>.
+                    </li><br>
+
+                    <li>
+                        M. S. Reza, M. I. Mahmud, I. A. Abeer and N. Ahmed, <strong>"Linear Discriminant Analysis in Credit Scoring: A Transparent Hybrid Model Approach,"</strong> <em>2024 27th International Conference on Computer and Information Technology (ICCIT)</em>, Cox's Bazar, Bangladesh, 2024, pp. 56-61.
+                        <a href="https://doi.org/10.1109/ICCIT64611.2024.11022149" target="_blank" rel="noopener noreferrer">DOI: 10.1109/ICCIT64611.2024.11022149</a>.
+                    </li><br>
+
+                    <li>
+                        M. I. Mahmud, M. S. Reza, and H. Akter, <strong>“Human Activity Recognition Using Multiple Learning & XAI Techniques with Wearable Sensor Data,”</strong> <em>North South University, Dhaka, Bangladesh</em>. 2023.
+                        <a href="https://repository.northsouth.edu/handle/123456789/1093" target="_blank" rel="noopener noreferrer">repository.northsouth.edu/handle/123456789/1093</a>
+                    </li><br>
+
+                    <li>
+                        M. I. Mahmud, <strong>“Towards Trustworthy Keylogger detection: A Comprehensive Analysis of Ensemble Techniques and Feature Selections through Explainable AI,”</strong> <em>arXiv.org</em>, May 22, 2025.
+                        <a href="https://arxiv.org/abs/2505.16103" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2505.16103</a>
+                    </li><br>
+
+                    <li>
+                        M. I. Mahmud, <strong>“ZeroML: A Next Generation AutoML Language,”</strong> <em>arXiv.org</em>, May 23, 2025.
+                        <a href="https://arxiv.org/abs/2505.18243" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2505.18243</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="container">
+            <div class="section-title">
+                <h4>Under Review ⏳</h4> <hr style="background-color: #77eaf0; height: 2px; border: none;">
+            </div>
+        </div>
+
+        <div class="col-lg-10"> <div class="publications-list under-review-list" style="text-align: justify;">
+                <ol>
+                  <li>
+                      Jan Bieniek, M. I. Mahmud, Henok Wondimu, Dinesh C. Verma, Tom Sheffler and Mohamed Rahouti. 2026. <strong>“FairRate: A Practical and Fair Reputation Update Pipeline for Ride-Hailing Platforms.”</strong> <em>IEEE Transactions on Intelligent Transportation Systems</em>. 
+                      <div style="display:inline-block; margin-left:10px;">
+                    
+                    <a href="https://drive.google.com/file/d/1mdI3dJV3OjqV1jWDuZvf32pGhhrXcZPZ/view?usp=sharing" target="_blank" style="text-decoration:none;">
+                      <button style="background-color:transparent; color:#66fff2; padding:4px 12px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                        Proposal
+                      </button>
+                    </a>
+                  </div>
+                  </li>
+                  <li class="mt-3">
+                    <a href="mailto:jbieniek@fordham.edu">J. Bieniek</a>,
+                    <a href="mailto:mahmudislam2025@gmail.com">M. I. Mahmud</a>,    
+                    <a href="mailto:mrahouti@fordham.edu">M. Rahouti</a>, 
+                    <a href="mailto:chehri@rmc.ca">A. Chehri</a>, and 
+                    <a href="mailto:gjeon@inu.ac.kr">G. Jeon</a>, 
+                    <strong>"ReMerkle: Proof of Reputation-driven Federated Learning with Compact Merkle Verification for Consumer-centric IoMT,"</strong> 
+                    <em>IEEE Transactions on Consumer Electronics</em>.
+                    <div style="display:inline-block; margin-left:10px;">
+                    
+                    <a href="https://github.com/johnnybieniek/MerkleFed" target="_blank" style="text-decoration:none;">
+                      <button style="background-color:transparent; color:#66fff2; padding:4px 12px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                  </li>
+
+                  
+                  
+                  <li class="mt-3">
+                    <a href="mailto:mahmudislam2025@gmail.com">M. I. Mahmud</a>, <a href="mailto:skp7@fordham.edu">S. Patel</a>, <a href="mailto:mrahouti@fordham.edu">M. Rahouti</a>, <a href="mailto:xiongk@usf.edu">Kaiqi Xiong</a>  and <a href="mailto:chehri@rmc.ca">A. Chehri</a>, <strong>"Secure Credit Scoring: A Merkle Tree and Zero-Knowledge Proof-Enhanced Approach with Proactive Security Strategies in Consumer Applications,"</strong> <em>IEEE Transactions on Information Forensic & Security</em>.
+                    <div style="display:inline-block; margin-left:10px;">
+                    
+                    <a href="https://github.com/Monirules/Zero-Knowledge-Proof-based-Merkle-Tree-Enhanced-Credit-Score" target="_blank" style="text-decoration:none;">
+                      <button style="background-color:transparent; color:#66fff2; padding:4px 12px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                </li>
+
+                    <li>
+                      <a href="mailto:mahmudislam2025@gmail.com">M. I. Mahmud</a>, <a href="mailto:shihab.reza@northsouth.edu">M. S. Reza</a>, <a href="mailto:farhana.elias@northsouth.edu">F. Elias</a>, <a href="mailto:kazi.ahmed12@northsouth.edu">K. A. Ahmed</a>, <a href="mailto:marjana.ahammad@northsouth.edu">M. Ahammad</a>, <a href="mailto:ifti.azad@northsouth.edu">I. A. Abeer</a>, and <a href="mailto:nova.ahmed@northsouth.edu">N. Ahmed</a>, <strong>"Multi-Domain Validation of Bayesian Optimized Stacking Ensembles for Next-Generation Credit Risk Modeling with Granular Explainability and Robust Statistical Inference,"</strong> <em>SN Computer Science.</em>
+                      <!-- Side by side buttons -->
+                      <div style="display:inline-block; margin-left:10px;">
+                      
+                      <a href="https://github.com/Monirules/BO_StaEnsemble--Bayesian-Optimized-Stacking-Ensemble-Approach-for-Credit-Scoring" style="text-decoration:none;" target="_blank">
+                        <button style="background-color:transparent; color:#66fff2; padding:4px 12px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                          Code
+                        </button>
+                      </a>
+                    </div>
+                  </li>
+                  
+                   
+
+                  <li class="mt-3">
+                      <a href="mailto:mahmudislam2025@gmail.com">M. I. Mahmud</a>, <a href="mailto:shihab.reza@northsouth.edu">M. S. Reza</a> and <a href="mailto:intisar.tahmid@northsouth.edu">I. T. Naheen</a>, <strong>"Multi-Head Temporal Attention Enhanced Bi-LSTM for Human Activity Recognition: Introducing a Novel Benchmark Wearable Sensor Dataset,"</strong> <em>Knowledge-Based Systems</em>.
+                      <div style="display:inline-block; ">
+                      <a href="https://docs.google.com/presentation/d/1ULGgLH5OUX3unw8_mhE-T2Ou9TxYHBIW/edit?usp=sharing&ouid=100164231984101644902&rtpof=true&sd=true" target="_blank" style="text-decoration:none;">
+                        <button style="background-color:transparent; color:#66fff2; padding:4px 12px; margin-right:5px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                          Poster
+                        </button>
+                      </a>
+                      <a href="https://github.com/Monirules/Multi-Head-Temporal-Attention-Enhanced-Bi-LSTM-for-Human-Activity-Recognition" target="_blank" style="text-decoration:none;">
+                        <button style="background-color:transparent; color:#66fff2; padding:4px 12px; border:1px solid #66fff2; border-radius:4px; cursor:pointer; font-size:14px;">
+                          Code
+                        </button>
+                      </a>
+                    </div>
+                  </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<br>
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="container">
+          <div class="section-title">
+            <h2>Between Two Homes ⮞</h2>
+            <hr>
+          </div>
+        </div>
+    
+        <!-- Custom Image Gallery -->
+        <div class="image-gallery">
+          <button class="gallery-nav prev">&lt;</button>
+          <div class="gallery-wrapper">
+            <!-- Each image -->
+            <div class="gallery-item">
+              <img src="assets/img/usa9.jpeg" alt="59 ST Columbus Circle">
+              <p>59 ST Columbus Circle - 25/11/2024</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/2026-1.jpg" alt="Well Agro">
+              <p>Feeding rabbits - 12/01/2026</p>
+            </div>
+
+            
+
+            <div class="gallery-item">
+              <img src="assets/img/102.jpg" alt="Fordham">
+              <p>Research Work - 06/10/2024</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/2026-6.png" alt="Snowman Image">
+              <p>Snowman at NYC - 20/12/2024</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/2026-4.png" alt="Times Square">
+              <p>Times Square - 21/11/2025</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="assets/img/2026-5.jpg" alt="Aeroplane">
+              <p>Relative velocity is zero? - 14/08/2024</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/coney.jpg" alt="Coney Island">
+              <p>Coney Island - 27/08/2025</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/2026-2.jpg" alt="vacation">
+              <p>Why not a coffee? - 12/01/2026</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/usa1.jpg" alt="Oculus Center">
+              <p>Oculus Center, NY - 03/04/2017</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/usa2.jpg" alt="Kaiser Park">
+              <p>Kaiser Park, NY - 28/08/2024</p>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="assets/img/usa5.jpeg" alt="Central Park">
+              <p>Central Park, NY - 15/08/2024</p>
+            </div>
+            
+            
+ 
+            
+            
+
+          </div>
+          <button class="gallery-nav next">&gt;</button>
+        </div>
+      </div>
+    </div>
+    
+    
+<br><br>
+
+    
+      </div>
+    </section>
+  </div>
+    <!-- End Of Team Section -->
+
+
+    <style>
+      /* Container hides the overflow */
+      .logo-marquee {
+  overflow: hidden;
+  padding: 40px 0;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: flex;
+  /* Adjust width based on total items (Original + Duplicates) */
+  width: max-content;
+  animation: scroll 20s linear infinite; /* Slowed down slightly for readability */
+}
+
+.marquee-item {
+  width: 320px;
+  margin: 0 30px; /* Increased gap for better spacing with text */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.marquee-item img {
+  max-width: 100%;
+  max-height: 160px; /* Slightly smaller to leave room for text */
+  height: auto;
+  margin-bottom: 12px; /* Gap between logo and name */
+  filter: grayscale(10%);
+  transition: all 0.3s ease;
+}
+
+/* University Name Styling */
+.marquee-item p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #cccccc;
+  margin: 0;
+  white-space: normal; /* Allows long names to wrap if needed */
+  line-height: 1.2;
+}
+
+/* Interaction Effects */
+.marquee-item:hover img {
+  filter: grayscale(0%);
+  transform: translateY(-5px);
+}
+
+.marquee-item:hover p {
+  color: #ffffff;
+}
+
+.logo-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.contact iframe,
+.contact-form-frame {
+  width: 100%;
+  max-width: 840px;
+  border: 0;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-300px * 5)); } /* (Width + Margin) * Number of Original Items */
+}
+
+@media (max-width: 767.98px) {
+  .logo-marquee {
+    padding: 24px 0;
+  }
+
+  .marquee-item {
+    margin: 0 16px;
+    width: 220px;
+  }
+
+  .marquee-item img {
+    max-height: 120px;
+  }
+
+  .contact iframe,
+  .contact-form-frame {
+    min-height: 920px;
+  }
+}
+    </style>
+
+
+<div class="container mt-5">
+  <div class="section-title">
+    <h2>Research Collaborations ⮞</h2>
+    <hr>
+  </div>
+
+  <div class="logo-marquee">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <img src="assets/img/fordham.jpg" alt="Fordham University">
+        <p>Fordham University</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/ibm.jpg" alt="IBM">
+        <p>IBM</p>
+      </div>
+      
+      <div class="marquee-item">
+        <img src="assets/img/usf.png" alt="University of South Florida">
+        <p>University of South Florida</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/rmcc.png" alt="Royal Military College of Canada">
+        <p>Royal Military College of Canada</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/inu.png" alt="Incheon National University">
+        <p>Incheon National University</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/dial.png" alt="NSUHCI-DIAL Lab">
+        <p>NSUHCI-DIAL Lab</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/nsu.png" alt="North South University">
+        <p>North South University</p>
+      </div>
+
+
+      <div class="marquee-item">
+        <img src="assets/img/fordham.jpg" alt="Fordham University">
+        <p>Fordham University</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/ibm.jpg" alt="IBM">
+        <p>IBM</p>
+      </div>
+      
+      <div class="marquee-item">
+        <img src="assets/img/usf.png" alt="University of South Florida">
+        <p>University of South Florida</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/rmcc.png" alt="Royal Military College of Canada">
+        <p>Royal Military College of Canada</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/inu.png" alt="Incheon National University">
+        <p>Incheon National University</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/dial.png" alt="NSUHCI-DIAL Lab">
+        <p>NSUHCI-DIAL Lab</p>
+      </div>
+      <div class="marquee-item">
+        <img src="assets/img/nsu.png" alt="North South University">
+        <p>North South University</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+
+      <div class="container">
+        <div class="section-title">
+          <h2>Get in Touch ⮞</h2><hr>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebyUc0-iS76YeFRFRYAnlXBm7iKc84jOKSPMvIpWyfsYx39Q/viewform?embedded=true" width="840" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            </div>
+          </div>
+        </div>
+<br><br>
+
+
+       
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-lg-6 col-md-6 footer-info">
+            <h3>Monirul I Mahmud</h3>
+            <p>
+              Brooklyn, New York <br>
+              
+              <strong>Email:</strong> monirul.mahmud9 [at] gmail [dot] com<br>
+            </p>
+            <div class="social-links mt-3">
+              
+              <a href="https://twitter.com/mahmud_monirul" class="twitter" target="blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://scholar.google.com/citations?user=9pLzr9UAAAAJ&hl=en" target="_blank">
+                <span class="iconify" data-icon="simple-icons:googlescholar" data-inline="false"></span>
+              </a>
+              <a href="https://github.com/Monirules" class="github" target="blank"><i class="bx bxl-github"></i></a>
+              <a href="https://www.linkedin.com/in/monirul-islam-mahmud/" class="linkedin" target="blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#education">Education</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#publication">Publication</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#dataset">Dataset</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="copyright">
+        &copy;  <strong><span>All Rights Reserved</span></strong>
+      </div>
+      <div class="credits">
+        Developed & maintained by <a href="https://www.linkedin.com/in/monirul-islam-mahmud/" target="blank" style="color: rgb(163, 228, 253); font-style:normal ; font-size: 15px; font-weight: bold;">Monirul</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script>
+    document.getElementById("download-resume").addEventListener("click", function() {
+      window.open("Monirul's_Resume.pdf");
+    });
+
+    document.getElementById("download-cv").addEventListener("click", function() {
+      window.open("Monirul_Islam_Mahmud_CV.pdf");
+    });
+  </script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+const wrapper = document.querySelector('.gallery-wrapper');
+const items = document.querySelectorAll('.gallery-item');
+const prevButton = document.querySelector('.gallery-nav.prev');
+const nextButton = document.querySelector('.gallery-nav.next');
+
+let currentIndex = 0;
+
+// Update visible images
+function updateGallery() {
+  items.forEach((item, index) => {
+    item.classList.remove('active');
+
+    if (index === currentIndex) {
+      item.classList.add('active');
+      item.style.transform = 'scale(1)';
+      item.style.opacity = '1';
+    } else if (index === currentIndex - 1 || index === currentIndex + 1) {
+      item.style.transform = 'scale(0.8)';
+      item.style.opacity = '0.5';
+    } else {
+      item.style.transform = 'scale(0.6)';
+      item.style.opacity = '0.2';
+    }
+  });
+
+  // Shift the gallery
+  const offset = -(currentIndex - 5) * 220; // Adjust width based on item size + gap
+  wrapper.style.transform = `translateX(${offset}px)`;
+}
+
+// Move to the previous set of images
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateGallery();
+});
+
+// Move to the next set of images
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateGallery();
+});
+
+// Initialize the gallery
+updateGallery();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.getElementById('body');
+
+  // Debugging to see if multiple listeners are attached
+  console.log('Event listener attached');
+
+  darkModeToggle.addEventListener('click', (event) => {
+    console.log('Button clicked'); // Should appear only once per click
+    event.stopPropagation(); // Prevent event interference
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+    darkModeToggle.textContent = body.classList.contains('dark-mode') 
+      ? 'Light Mode' 
+      : 'Dark Mode';
+  });
+});
+
+
+</script>
+
+<!-- Iconify CDN -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
+</body>
+
+</html>
