@@ -1,6 +1,6 @@
-# Monirules Portfolio
+# Monirul Islam Mahmud Portfolio
 
-Welcome to my personal portfolio! This website highlights my professional journey, technical projects, and experience in software development. It includes an accessible interface to view my work and resume.
+Welcome to the official portfolio of Monirul Islam Mahmud (Monirul I. Mahmud). This website highlights my professional journey, research, technical projects, publications, datasets, and experience in AI security, privacy-preserving machine learning, blockchain, and software development.
 
 ## Features:
 - **Professional Overview**: Information about my background and expertise.
